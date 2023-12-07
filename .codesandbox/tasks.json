@@ -1,0 +1,398 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "after:publish:assets": {
+      "name": "after:publish:assets",
+      "command": "yarn after:publish:assets",
+      "runAtStart": false
+    },
+    "analyze": {
+      "name": "analyze",
+      "command": "yarn analyze",
+      "runAtStart": false
+    },
+    "analyze:dev": {
+      "name": "analyze:dev",
+      "command": "yarn analyze:dev",
+      "runAtStart": false
+    },
+    "analyze:prod": {
+      "name": "analyze:prod",
+      "command": "yarn analyze:prod",
+      "runAtStart": false
+    },
+    "before:build:python": {
+      "name": "before:build:python",
+      "command": "yarn before:build:python",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "prebuild:all": {
+      "name": "prebuild:all",
+      "command": "yarn prebuild:all",
+      "runAtStart": false
+    },
+    "build:all": {
+      "name": "build:all",
+      "command": "yarn build:all",
+      "runAtStart": false
+    },
+    "postbuild:all": {
+      "name": "postbuild:all",
+      "command": "yarn postbuild:all",
+      "runAtStart": false
+    },
+    "build:builder": {
+      "name": "build:builder",
+      "command": "yarn build:builder",
+      "runAtStart": false
+    },
+    "build:core": {
+      "name": "build:core",
+      "command": "yarn build:core",
+      "runAtStart": false
+    },
+    "build:dev": {
+      "name": "build:dev",
+      "command": "yarn build:dev",
+      "runAtStart": false
+    },
+    "build:dev:prod": {
+      "name": "build:dev:prod",
+      "command": "yarn build:dev:prod",
+      "runAtStart": false
+    },
+    "build:dev:prod:minimize": {
+      "name": "build:dev:prod:minimize",
+      "command": "yarn build:dev:prod:minimize",
+      "runAtStart": false
+    },
+    "build:dev:prod:minimize:report": {
+      "name": "build:dev:prod:minimize:report",
+      "command": "yarn build:dev:prod:minimize:report",
+      "runAtStart": false
+    },
+    "build:dev:prod:release": {
+      "name": "build:dev:prod:release",
+      "command": "yarn build:dev:prod:release",
+      "runAtStart": false
+    },
+    "build:examples": {
+      "name": "build:examples",
+      "command": "yarn build:examples",
+      "runAtStart": false
+    },
+    "build:galata": {
+      "name": "build:galata",
+      "command": "yarn build:galata",
+      "runAtStart": false
+    },
+    "build:nbconvert:css": {
+      "name": "build:nbconvert:css",
+      "command": "yarn build:nbconvert:css",
+      "runAtStart": false
+    },
+    "build:packages": {
+      "name": "build:packages",
+      "command": "yarn build:packages",
+      "runAtStart": false
+    },
+    "build:packages:scope": {
+      "name": "build:packages:scope",
+      "command": "yarn build:packages:scope",
+      "runAtStart": false
+    },
+    "build:src": {
+      "name": "build:src",
+      "command": "yarn build:src",
+      "runAtStart": false
+    },
+    "build:test": {
+      "name": "build:test",
+      "command": "yarn build:test",
+      "runAtStart": false
+    },
+    "build:test:scope": {
+      "name": "build:test:scope",
+      "command": "yarn build:test:scope",
+      "runAtStart": false
+    },
+    "build:testutils": {
+      "name": "build:testutils",
+      "command": "yarn build:testutils",
+      "runAtStart": false
+    },
+    "build:utils": {
+      "name": "build:utils",
+      "command": "yarn build:utils",
+      "runAtStart": false
+    },
+    "bump:js:major": {
+      "name": "bump:js:major",
+      "command": "yarn bump:js:major",
+      "runAtStart": false
+    },
+    "bumpversion": {
+      "name": "bumpversion",
+      "command": "yarn bumpversion",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "yarn clean",
+      "runAtStart": false
+    },
+    "clean:core": {
+      "name": "clean:core",
+      "command": "yarn clean:core",
+      "runAtStart": false
+    },
+    "clean:dev": {
+      "name": "clean:dev",
+      "command": "yarn clean:dev",
+      "runAtStart": false
+    },
+    "clean:examples": {
+      "name": "clean:examples",
+      "command": "yarn clean:examples",
+      "runAtStart": false
+    },
+    "clean:galata": {
+      "name": "clean:galata",
+      "command": "yarn clean:galata",
+      "runAtStart": false
+    },
+    "clean:packages": {
+      "name": "clean:packages",
+      "command": "yarn clean:packages",
+      "runAtStart": false
+    },
+    "clean:slate": {
+      "name": "clean:slate",
+      "command": "yarn clean:slate",
+      "runAtStart": false
+    },
+    "clean:src": {
+      "name": "clean:src",
+      "command": "yarn clean:src",
+      "runAtStart": false
+    },
+    "clean:test": {
+      "name": "clean:test",
+      "command": "yarn clean:test",
+      "runAtStart": false
+    },
+    "clean:utils": {
+      "name": "clean:utils",
+      "command": "yarn clean:utils",
+      "runAtStart": false
+    },
+    "coverage": {
+      "name": "coverage",
+      "command": "yarn coverage",
+      "runAtStart": false
+    },
+    "create:package": {
+      "name": "create:package",
+      "command": "yarn create:package",
+      "runAtStart": false
+    },
+    "create:test": {
+      "name": "create:test",
+      "command": "yarn create:test",
+      "runAtStart": false
+    },
+    "deduplicate": {
+      "name": "deduplicate",
+      "command": "yarn deduplicate",
+      "runAtStart": false
+    },
+    "docs": {
+      "name": "docs",
+      "command": "yarn docs",
+      "runAtStart": false
+    },
+    "docs:init": {
+      "name": "docs:init",
+      "command": "yarn docs:init",
+      "runAtStart": false
+    },
+    "eslint": {
+      "name": "eslint",
+      "command": "yarn eslint",
+      "runAtStart": false
+    },
+    "eslint:check": {
+      "name": "eslint:check",
+      "command": "yarn eslint:check",
+      "runAtStart": false
+    },
+    "eslint:check:typed": {
+      "name": "eslint:check:typed",
+      "command": "yarn eslint:check:typed",
+      "runAtStart": false
+    },
+    "eslint:files": {
+      "name": "eslint:files",
+      "command": "yarn eslint:files",
+      "runAtStart": false
+    },
+    "eslint:typed": {
+      "name": "eslint:typed",
+      "command": "yarn eslint:typed",
+      "runAtStart": false
+    },
+    "get:dependency": {
+      "name": "get:dependency",
+      "command": "yarn get:dependency",
+      "runAtStart": false
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "yarn postinstall",
+      "runAtStart": false
+    },
+    "integrity": {
+      "name": "integrity",
+      "command": "yarn integrity",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "lint:check": {
+      "name": "lint:check",
+      "command": "yarn lint:check",
+      "runAtStart": false
+    },
+    "patch:release": {
+      "name": "patch:release",
+      "command": "yarn patch:release",
+      "runAtStart": false
+    },
+    "prepare:python-release": {
+      "name": "prepare:python-release",
+      "command": "yarn prepare:python-release",
+      "runAtStart": false
+    },
+    "prepublish:check": {
+      "name": "prepublish:check",
+      "command": "yarn prepublish:check",
+      "runAtStart": false
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "yarn prettier",
+      "runAtStart": false
+    },
+    "prettier:check": {
+      "name": "prettier:check",
+      "command": "yarn prettier:check",
+      "runAtStart": false
+    },
+    "prettier:files": {
+      "name": "prettier:files",
+      "command": "yarn prettier:files",
+      "runAtStart": false
+    },
+    "publish:js": {
+      "name": "publish:js",
+      "command": "yarn publish:js",
+      "runAtStart": false
+    },
+    "remove:dependency": {
+      "name": "remove:dependency",
+      "command": "yarn remove:dependency",
+      "runAtStart": false
+    },
+    "remove:package": {
+      "name": "remove:package",
+      "command": "yarn remove:package",
+      "runAtStart": false
+    },
+    "remove:sibling": {
+      "name": "remove:sibling",
+      "command": "yarn remove:sibling",
+      "runAtStart": false
+    },
+    "stylelint": {
+      "name": "stylelint",
+      "command": "yarn stylelint",
+      "runAtStart": false
+    },
+    "stylelint:check": {
+      "name": "stylelint:check",
+      "command": "yarn stylelint:check",
+      "runAtStart": false
+    },
+    "stylelint:files": {
+      "name": "stylelint:files",
+      "command": "yarn stylelint:files",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "test:all": {
+      "name": "test:all",
+      "command": "yarn test:all",
+      "runAtStart": false
+    },
+    "test:examples": {
+      "name": "test:examples",
+      "command": "yarn test:examples",
+      "runAtStart": false
+    },
+    "test:galata": {
+      "name": "test:galata",
+      "command": "yarn test:galata",
+      "runAtStart": false
+    },
+    "test:scope": {
+      "name": "test:scope",
+      "command": "yarn test:scope",
+      "runAtStart": false
+    },
+    "test:summary": {
+      "name": "test:summary",
+      "command": "yarn test:summary",
+      "runAtStart": false
+    },
+    "update:dependency": {
+      "name": "update:dependency",
+      "command": "yarn update:dependency",
+      "runAtStart": false
+    },
+    "watch": {
+      "name": "watch",
+      "command": "yarn watch",
+      "runAtStart": false
+    },
+    "watch:main": {
+      "name": "watch:main",
+      "command": "yarn watch:main",
+      "runAtStart": false
+    },
+    "watch:packages": {
+      "name": "watch:packages",
+      "command": "yarn watch:packages",
+      "runAtStart": false
+    }
+  }
+}
